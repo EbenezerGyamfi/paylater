@@ -148,15 +148,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12">
-          <div class="row section-t3">
-          </div>
-          <div class="row">
-            <div class="col-12">
+          <div class="row mt-4 justify-content-end">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15884.065699512665!2d-0.3163078798568494!3d5.564582485959226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf981a8975e7bb%3A0xc4d4487298accf44!2sMcCarthy%20Hill%2C%20Mallam!5e0!3m2!1sen!2sgh!4v1674160502993!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+   
           </div>
-        </div>
       </div>
     </div>
   </section>
