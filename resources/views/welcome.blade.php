@@ -301,8 +301,8 @@ I purchased a  piece of land from paylater, and as a result, I have reached the
 
   <!--/ Footer End /-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+  {{-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div> --}}
 
   <!-- JavaScript Libraries -->
 

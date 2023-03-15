@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p>Ebenezer Gyamfi have successfully requested for a 2 in one hostel to be booked on 24 March 2023 at 2:00pm</p>
+    <p>Ebenezer Gyamfi have successfully booked for a 2 in one hostel to be viewed on 24 March 2023 at 2:00pm</p>
 </body>
 
 </html>

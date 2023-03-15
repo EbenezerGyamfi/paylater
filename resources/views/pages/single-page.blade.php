@@ -61,7 +61,7 @@
               <div class="row">
                 <div class="col-sm-12">
                   <div class="title-box-d">
-                    <h3 class="title-d">Make Payment</h3>
+                    <h3 class="title-d">Book View</h3>
                    
                   </div>
                  <div class="property-contact">
@@ -162,10 +162,6 @@
 @include('home.footer')
 
   <!--/ Footer End /-->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
-
   <!-- JavaScript Libraries -->
  @include('home.script.script')
 

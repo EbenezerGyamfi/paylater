@@ -37,13 +37,20 @@
             <a class="nav-link" href="{{route('contact')}}">Contact</a>
           </li>
 
-       @guest
+       {{-- @guest
        <li class="nav-item">
         <a class="btn btn-warning" href="{{route('login')}}">Login</a>
       </li>
-       @endguest
+       @endguest --}}
 
 
+       <li class="nav-item ">
+        <div class="justify-content-end">
+          <a href="https://wa.me/0243975304" target="_blank">
+            <img src="{{asset('img/watsapplogo.png')}}" width="40px" height="40px" alt="" srcset="">
+          </a>
+        </div>
+       </li>
     
       </div>
 
