@@ -33,10 +33,11 @@ public function getPicturesAttribute($pictures)
 
        public function scopeFilter($query)
     {
-        $search = request('property');
+        $search = request('search');
    if($search){
          $query
-         ->where('title','like','%'. $search .'%');
+         ->where('title','like','%'. $search .'%')
+         ->orwhere('price',$search);
    }
     }
 }

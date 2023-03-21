@@ -15,6 +15,7 @@
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
             <h1 class="title-single">{{$property->title}}</h1>
+            
             <span class="color-text-a">{{$property->location}}</span>
           </div>
         </div>
@@ -39,9 +40,22 @@
   <!--/ Intro Single End /-->
 
   <!--/ Property Single Star /-->
+  
   <section class="property-single nav-arrow-b">
     <div class="container">
       <div class="row">
+          <div class="col-md-5 col-lg-4"> 
+              <div class="property-price d-flex justify-content-center foo mb-5 ml-3"> 
+                <div class="card-header-c d-flex"> 
+                  <div class="card-box-ico"> 
+                    <span class="ion-money">₵</span> 
+                  </div> 
+                  <div class="card-title-c align-self-center mb-3"> 
+                    <h5 class="title-c">{{$property->price}} / sem.</h5> 
+                  </div> 
+                </div> 
+              </div>
+            </div>
         <div class="col-sm-12">
           <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
             <div class="carousel-item-b">
@@ -64,6 +78,7 @@
                     <h3 class="title-d">Book View</h3>
                    
                   </div>
+          
                  <div class="property-contact">
                   <form class="form-a" method="POST" action="{{route('customer.appointment',$property->id)}}">
                     @csrf

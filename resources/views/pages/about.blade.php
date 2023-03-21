@@ -46,7 +46,7 @@
         <div class="col-md-12 section-t8">
           <div class="row">
             <div class="col-md-6 col-lg-5">
-              <img  src="img/mod-3.JPG" alt="" class="img-fluid">
+              <img  src="img/derrick.jpeg" alt="" class="img-fluid">
             </div>
             <div class="col-lg-2  d-none d-lg-block">
               <div class="title-vertical d-flex justify-content-start">
@@ -55,12 +55,12 @@
             </div>
             <div class="col-md-6 col-lg-5 section-md-t3">
               <div class="title-box-d">
-                <h3 class="title-d">The birth of PayLater
-                  <span class="color-d">by the co-founders</span> Tijani Mohammed  And Ebenezer Gyamfi
+                <h3 class="title-d">The birth of Rentmann
+                  <span class="color-d">by the co-founders</span> Tijani Mohammed, Derrick Ofori, Philip Ladzaka And Ebenezer Gyamfi
                   <br> </h3>
               </div>
               <p class="color-text-a">
-                It wasn't simple for us to go from our hometown to Accra. We had to spend the night outside without shelter due to the high costs of motels and landlord rent. We might have come under attack. however, that Night, God saved us. Then, we witnessed how Accra's real estate agents abuse their clients. We made the decision to address this issue because we were passionate about making a difference. We enrolled in college to pursue a Bsc. in computer science in order to broaden our perspective on the world. We created paylater with the determination and vision to decrease the burden on young people in Ghana, Africa, and the rest of the world. Godspeed to Mother Africa.
+                It wasn't simple for us to go from our hometown to Accra. We had to spend the night outside without shelter due to the high costs of motels and landlord rent. We might have come under attack. however, that Night, God saved us. Then, we witnessed how Accra's real estate agents abuse their clients. We made the decision to address this issue because we were passionate about making a difference. We enrolled in college to pursue a Bsc. in computer science in order to broaden our perspective on the world. We created Rentmann with the determination and vision to decrease the burden on young people in Ghana, Africa, and the rest of the world. Godspeed to Mother Africa.
               </p>
             
             </div>
@@ -72,7 +72,7 @@
   <!--/ About End /-->
 
   <!--/ Team Star /-->
-  <section class="section-agents section-t8">
+  {{-- <section class="section-agents section-t8">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -112,7 +112,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--/ Team End /-->
 
   <!--/ footer Star /-->
@@ -123,8 +123,6 @@
 @include('home.footer')
   <!--/ Footer End /-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
 
    @include('home.script.script')
 

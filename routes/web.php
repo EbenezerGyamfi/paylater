@@ -34,23 +34,19 @@ Route::get('/cart-page',[CartController::class,'index'])->name('cart-page');
 
 Route::get('/properties',[PropertyController::class,'index'])->name('properties-home');
 
-Route::post('/pay/{property}',[PaymentController::class,'submit_payment'])->name('pay')->middleware('auth');
+// Route::post('/pay/{property}',[PaymentController::class,'submit_payment'])->name('pay')->middleware('auth');
 
-Route::get('pay/callback', [PaymentController::class,'callback'])->name('pay.callback');
+// Route::get('pay/callback', [PaymentController::class,'callback'])->name('pay.callback');
 
 Route::post('/customer-message/{property}', [CustomerAppointmentController::class,'store_appointment'])->name('customer.appointment');
 
-Route::get('/propert-detail/{property}',function(Property $property){
-
-    return view('pages.single-page',compact('property'));
-
-})->name('single');
+Route::get('/propert-detail/{property}', [PropertyController::class,'show'])->name('single');
 
 
 Route::post('/contact/store',[ContactController::class,'store'])->name('add');
 
 
-Route::get('/auth-user',[PaymentController::class,'history'])->name('dashboard');
+// Route::get('/auth-user',[PaymentController::class,'history'])->name('dashboard');
 
 
 Route::get('/login', function(){

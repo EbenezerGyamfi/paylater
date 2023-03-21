@@ -354,11 +354,6 @@ a:hover {
 
 /*------/ Owl carousel /------*/
 
-
-.carousel-item-b img{
-  height: auto;
-  width: 100%;
-}
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 18px;
@@ -1869,12 +1864,14 @@ footer .credits {
   .add_to_cart{
     padding: 200px;
   }
+    
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
   .card-box-a:hover .card-overlay-a-content {
     bottom: 64px;
   }
+     
 }
 
 @media (min-width: 992px) {

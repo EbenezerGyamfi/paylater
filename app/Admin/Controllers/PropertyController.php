@@ -71,7 +71,7 @@ class PropertyController extends AdminController
         $form->number('bath');
         $form->number('kitchen');
         $form->multipleImage('pictures')->sortable();
-      $form->multipleSelect('amenities')->options(['Air_condition' => 'Air_condition', 'Tiled' => 'Tiled', 'Kitchen' => 'Kitchen',  'Tv' => 'Tv','Internet' => 'Internet','Security_service' => "Security_service",'Water_reservoir' => "Water_reservoir",'Parking' => "Parking","fenced" => 'fenced','Concrete_Flooring' => 'Concrete_Flooring']);
+      $form->multipleSelect('amenities')->options(['Air_condition' =>  'Air_condition','water' =>  'Free Water', 'Tiled' => 'Tiled', 'Kitchen' => 'Kitchen',  'Tv' => 'Tv','Internet' => 'Internet','Security_service' => "Security_service",'Water_reservoir' => "Water_reservoir",'Parking' => "Parking","fenced" => 'fenced','Concrete_Flooring' => 'Concrete_Flooring']);
         return $form;
     }
 }

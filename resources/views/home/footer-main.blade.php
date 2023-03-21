@@ -14,9 +14,9 @@
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> +233 240994061</li>
+                  <span class="color-text-a">Phone: </span> +233 240994061</li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> ceo.paylater@gmail.com</li>
+                  <span class="color-text-a">Email: </span>customer.rentmann@gmail.com</li>
               </ul>
             </div>
           </div>

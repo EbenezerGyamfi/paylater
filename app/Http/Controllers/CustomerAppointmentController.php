@@ -30,7 +30,7 @@ class CustomerAppointmentController extends Controller
 
 
         Mail::send(new AppointmentBooked($appointment));
-        return  redirect()->back()->with('success', 'Thank you for contacting us, we will be in touch shortly');
+        return  redirect()->back()->with('toast_success', 'Thank you for contacting us, we will be in touch shortly');
 
 
 
