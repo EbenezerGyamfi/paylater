@@ -1,15 +1,6 @@
-@include('home.header')
-
-<body>
-    @include('home.search')
-    <!--/ Form Search End /-->
-  
-    <!--/ Nav Star /-->
-  @include('home.navigation-main')
-  <!--/ Nav End /-->
-
-  <!--/ Intro Single star /-->
-  <section class="intro-single">
+@extends('layout')
+@section('content')
+      <section class="intro-single">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-8">
@@ -69,62 +60,4 @@
       </div>
     </div>
   </section>
-  <!--/ About End /-->
-
-  <!--/ Team Star /-->
-  {{-- <section class="section-agents section-t8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
-            <div class="title-box">
-              <h2 class="title-a">Meet our moderators</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="img/mod-1.jpg" alt="" class="img-d img-fluid">
-            </div>
-            <b>Dr.James Attah Nuamah</b>
-    <p>Commisioner, National Labour Commission-Ghana</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="img/mod-2.jpg" alt="" class="img-d img-fluid">
-            </div>            
-          </div>
-          <b>Mr. Attah Opoku</b>
-          <p>Lecturer & Head Of Department <br>Regent University -Ghana</p>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="img/mod-4.jpg" alt="" class="img-d img-fluid">
-            </div>
-            <b>Prof. Ernest Ofori Asamoah</b>
-            <p>Senior Consultant <br> Fmr. President, Regent University Independent Director, Equity Health Insurance</p>
-        </div>
-      </div>
-    </div>
-  </section> --}}
-  <!--/ Team End /-->
-
-  <!--/ footer Star /-->
- 
- 
-
-@include('home.footer-main')
-@include('home.footer')
-  <!--/ Footer End /-->
-
-
-   @include('home.script.script')
-
-</body>
-</html>
+@endsection

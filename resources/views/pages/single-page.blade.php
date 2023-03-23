@@ -1,47 +1,8 @@
-@include('home.header')
+@extends('layout')
 
-<body>
-    @include('home.search')
-    <!--/ Form Search End /-->
-  
-    <!--/ Nav Star /-->
-  @include('home.navigation-main')
-  <!--/ Nav End /-->
 
-  <!--/ Intro Single star /-->
-  <section class="intro-single">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-8">
-          <div class="title-single-box">
-            <h1 class="title-single">{{$property->title}}</h1>
-            
-            <span class="color-text-a">{{$property->location}}</span>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4">
-          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="property-grid.html">Properties</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                4 BEDROOM 
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Intro Single End /-->
-
-  <!--/ Property Single Star /-->
-  
-  <section class="property-single nav-arrow-b">
+@section('content')
+     <section class="property-single nav-arrow-b">
     <div class="container">
       <div class="row">
           <div class="col-md-5 col-lg-4"> 
@@ -170,17 +131,4 @@
       </div>
     </div>
   </section>
-  <!--/ Property Single End /-->
-
-  <!--/ footer Star /-->
-    @include('home.footer-main')
-@include('home.footer')
-
-  <!--/ Footer End /-->
-  <!-- JavaScript Libraries -->
- @include('home.script.script')
-
- @include('sweetalert::alert')
-
-</body>
-</html>
+@endsection

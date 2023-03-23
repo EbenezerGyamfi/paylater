@@ -1,15 +1,8 @@
-@include('home.header')
+@extends('layout')
 
-<body>
-    @include('home.search')
-    <!--/ Form Search End /-->
 
-    <!--/ Nav Star /-->
-    @include('home.navigation-main')
-    <!--/ Nav End /-->
-
-    <!--/ Intro Single star /-->
-    <section class="intro-single">
+@section('content')
+     <section class="intro-single">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-8">
@@ -147,16 +140,4 @@
             </div>
         </div>
     </section>
-    <!--/ Contact End /-->
-
-    <!--/ footer Star /-->
-    @include('home.footer-main')
-    @include('home.footer')
-    <!--/ Footer End /-->
-
-    <!-- JavaScript Libraries -->
-    @include('home.script.script')
-    @include('sweetalert::alert')
-</body>
-
-</html>
+@endsection

@@ -1,15 +1,7 @@
-@include('home.header')
+@extends('layout')
 
-<body>
-    @include('home.search')
-    <!--/ Form Search End /-->
 
-    <!--/ Nav Star /-->
-    @include('home.navigation-main')
-
-    <!--/ Nav End /-->
-
-    <!--/ Intro Single star /-->
+@section('content')
     <section class="intro-single">
         <div class="container">
             <div class="row">
@@ -115,20 +107,5 @@
             </div>
         </div>
     </section>
-    <!--/ Property Grid End /-->
+@endsection
 
-    <!--/ footer Star /-->
-    @include('home.footer-main')
-
-    @include('home.footer')
-    <!--/ Footer End /-->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
-
-    @include('home.script.script')
-    @include('sweetalert::alert')
-
-</body>
-
-</html>

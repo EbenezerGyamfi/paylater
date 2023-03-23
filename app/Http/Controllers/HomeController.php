@@ -13,6 +13,6 @@ class HomeController extends Controller
         $properties = Property::take(3)->get();
 
         // dd($properties[0]->pictures);
-       return view('welcome',compact('properties'));
+       return view('home',compact('properties'));
     }
 }
