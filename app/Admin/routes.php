@@ -16,4 +16,6 @@ Route::group([
 $router->resource('property-types', PropertyTypeController::class);
 $router->resource('appointments', AppointmentController::class);
 
+    $router->resource('categories', CategoryController::class);
+
 });

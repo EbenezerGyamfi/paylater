@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 
 @section('content')
@@ -34,12 +34,13 @@
                 <div class="col-sm-12">
                     <div class="grid-option">
                         <div class="input-group justify-content-end">
-                            <form action="{{route('properties-home')}}" method="get">
+                            <form action="{{ route('properties-home') }}" method="get">
                                 <div class="input-group">
-                                    <input type="search" class="form-control rounded"
-                                     placeholder="filter by name or price "
-                                        aria-label="Search" aria-describedby="search-addon" value="{{ request()->input('search') }}"  name="search"/>
-                                    <button type="submit" class="btn btn-outline-warning">search</button>
+                                    <select name="" id="" class="form-control">
+                                        @foreach ($categories as $category)
+                                           {{$category->title;}}
+                                        @endforeach
+                                    </select>
                                 </div>
                             </form>
                         </div>
@@ -63,8 +64,7 @@
                                         </div>
                                         <div class="card-body-a">
                                             <div class="price-box d-flex">
-                                                <a href="{{ route('single', $property->id) }}"><span
-                                                        class="price-a">view
+                                                <a href="{{ route('single', $property->id) }}"><span class="price-a">view
                                                         | GH₵‎ {{ $property->price }} / Semester</span></a>
                                             </div>
                                         </div>
@@ -108,4 +108,3 @@
         </div>
     </section>
 @endsection
-

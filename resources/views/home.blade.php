@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
         <div class="intro intro-carousel">
@@ -68,10 +68,11 @@
     <section class="section-services section-t8">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                   <x-front-end.title title-type="ebenezer"/>
-                </div>
-            </div>
+                {{-- <div class="col-md-12">
+                   <x-front-end.title title-type="Rentmann"/>
+                   <x-button type="button" title="Submit User"/>
+                   <x-button type="submit" title="Update User" class="mb-4" />
+                </div> --}}
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-box-c foo">

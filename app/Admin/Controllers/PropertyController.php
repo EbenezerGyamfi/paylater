@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Models\Category;
 use App\Models\Property;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -25,9 +26,9 @@ class PropertyController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Property());
+        $grid->column('category_id');
         $grid->column('pictures')->image();
         $grid->column('title');
-        $grid->column('description');
         $grid->column('price');
         $grid->column('amenities');
         return $grid;
@@ -42,12 +43,12 @@ class PropertyController extends AdminController
     protected function detail($id)
     {
         $show = new Show(Property::findOrFail($id));
+        $show->select('category_id')->options((new Category())::selectOptions());
         $show->text('pictures', 'pictures');
         $show->text('title','title');
         $show->number('price', 'price');
         $show->text('description', 'description');
         $show->text('url', 'url');
-
 
         return $show;
     }
@@ -61,6 +62,7 @@ class PropertyController extends AdminController
     {
         $form = new Form(new Property());
         // $form->multipleImage('pictures');
+        $form->select('Select Category')->options((new Category())::selectOptions());
         $form->text('title', 'title');
         $form->textarea('description','description');
         $form->number('price', 'price');

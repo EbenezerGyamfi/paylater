@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Property;
 use Illuminate\Http\Request;
 
@@ -18,8 +19,11 @@ class PropertyController extends Controller
         $properties = Property::latest()->filter()->get();
 
 
+        $categories = Category::all();
 
-        return  view('pages.property', compact('properties'));
+     
+
+        return  view('pages.property', compact('properties', 'categories'));
     }
 
 

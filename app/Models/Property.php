@@ -40,6 +40,11 @@ public function getPicturesAttribute($pictures)
          ->orwhere('price',$search);
    }
     }
+
+
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
 }
 
 
